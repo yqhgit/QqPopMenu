@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/first"
+        android:background="@android:color/white"
+        android:layout_above="@id/start">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new day"
+            />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/second"
+        android:layout_above="@id/start">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second day"
+            />
+    </FrameLayout>
+    
+</RelativeLayout>
